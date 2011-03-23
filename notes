@@ -29,3 +29,24 @@ git push heroku master
 rails generate controller Pages home contact
 git add .
 peci@Inspiron-N5010:~/heroku/app_test$ git commit -m "Added a Pages controller"
+gem install autotest -v 4.4.6
+gem install autotest-rails-pure -v 4.1.2
+git rm -r spec/views
+git rm -r spec/helpers
+rm -rf spec/views
+rm -rf spec/helpers
+rspec spec/
+rspec spec/controllers/
+rspec spec/controllers/pages_controller_spec.rb
+vi spec/controllers/pages_controller_spec.rb
+....
+
+git add .
+git commit -m "Done with static pages end chap 3"
+git checkout master
+git merge static-pages
+rspec spec/
+git push
+vi app/views/pages/help.html.erb
+	##adding help page
+
