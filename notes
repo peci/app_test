@@ -1,0 +1,31 @@
+peci@Inspiron-N5010:~/heroku/demo_app$ git branch
+  filling-in-layout
+  master
+* modeling-users
+	## listva branchovete
+git add .
+commit -a -m "Screwed up"
+git checkout master
+Switched to branch 'master'
+git branch -D modeling-users
+	## VRUSHTA GIT DO OPREDELN BRANCH
+
+vi Gemfile 
+ bundle install
+git config --global user.name "Petko Penkov"
+peci@Inspiron-N5010:~/heroku/app_test$ git config --global user.email peci@hitsol.net
+peci@Inspiron-N5010:~/heroku/app_test$ rails generate rspec:install
+git init
+Initialized empty Git repository in /home/peci/heroku/app_test/.git/
+peci@Inspiron-N5010:~/heroku/app_test$ git add .
+peci@Inspiron-N5010:~/heroku/app_test$ git commit -m "Initial commit chap 3"
+git mv README README.markdown
+peci@Inspiron-N5010:~/heroku/app_test$ git commit -a -m "Improved the README"
+git remote add origin git@github.com:peci/app_test.git
+peci@Inspiron-N5010:~/heroku/app_test$ git push origin master
+ heroku create peci-app-new
+git push heroku master
+ git checkout -b static-pages
+rails generate controller Pages home contact
+git add .
+peci@Inspiron-N5010:~/heroku/app_test$ git commit -m "Added a Pages controller"
